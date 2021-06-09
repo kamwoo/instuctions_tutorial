@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		F6ADFEEC267084C9009A28EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6ADFEEA267084C9009A28EC /* Main.storyboard */; };
 		F6ADFEEE267084CA009A28EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6ADFEED267084CA009A28EC /* Assets.xcassets */; };
 		F6ADFEF1267084CA009A28EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6ADFEEF267084CA009A28EC /* LaunchScreen.storyboard */; };
+		F6ADFEFA2670875E009A28EC /* Instructions in Frameworks */ = {isa = PBXBuildFile; productRef = F6ADFEF92670875E009A28EC /* Instructions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6ADFEFA2670875E009A28EC /* Instructions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = instuctions_tutorial;
+			packageProductDependencies = (
+				F6ADFEF92670875E009A28EC /* Instructions */,
+			);
 			productName = instuctions_tutorial;
 			productReference = F6ADFEE1267084C9009A28EC /* instuctions_tutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = F6ADFED8267084C9009A28EC;
+			packageReferences = (
+				F6ADFEF82670875E009A28EC /* XCRemoteSwiftPackageReference "Instructions" */,
+			);
 			productRefGroup = F6ADFEE2267084C9009A28EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6ADFEF82670875E009A28EC /* XCRemoteSwiftPackageReference "Instructions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ephread/Instructions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6ADFEF92670875E009A28EC /* Instructions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6ADFEF82670875E009A28EC /* XCRemoteSwiftPackageReference "Instructions" */;
+			productName = Instructions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6ADFED9267084C9009A28EC /* Project object */;
 }
